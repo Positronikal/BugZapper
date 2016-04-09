@@ -5,6 +5,8 @@ BugZapper is a basic bash debugger that can serve the following purposes:
      * Print program source code, breakpoints, and the currently executing line number.
      * Debug without altering target program source code.
 
+This script is based on a project from "Learning the bash shell", Third Edition, by Cameron Newham and Bill Rosenblatt, copyright 2005 O'Reilly Media, Inc. 0-596-00965-8.
+
 BugZapper turns the target program being debugged into its own debugger by concatenating the debugger code with the target program's source code into a separate file for execution.
 
 BugZapper has three main sections:

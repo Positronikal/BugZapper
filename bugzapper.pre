@@ -1,8 +1,31 @@
 #!/bin/bash
 #
-# BugZapper - a bash debugger (GPLv2)
-# Preamble script: This file gets prepended to the target script (_guineapig)
-# being debugged.
+# BugZapper - a simple debugger for bash. *THIS IS THE PREAMBLE SCRIPT ONLY*
+#
+# Preamble script: Concatenated to the target script (_guineapig) after the
+# driver script (bugzapper) runs and then executes the new script making calls
+# to the functions contained in bugzapper.fns. All three script files are
+# required to work.
+#
+# This script is based on a project from "Learning the bash shell", Third
+# Edition, by Cameron Newham and Bill Rosenblatt, copyright 2005 O'Reilly
+# Media, Inc. 0-596-00965-8.
+#
+# This program is free software: You can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Original author: Hoyt Harness.
+# Send bug reports and any other correspondence to hoyt.harness@gmail.com.
 #
 # Arguments:
 # $1 = The name of the orignal target script.
